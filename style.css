@@ -38,7 +38,7 @@ input {
     outline: none;
     border-radius: 10px;
     margin-bottom: 50px;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(50, 50, 50);
     color: var(--white);
     transition: box-shadow .3s;
     margin-right: 10px;
@@ -50,6 +50,7 @@ input:focus {
 
 button {
     border-radius: 10px;
+    user-select: none;
     border: none;
     background-color: rgb(137, 50, 218);
     color: rgb(228, 206, 228);
@@ -76,4 +77,30 @@ button:active {
 #generateButton {
     padding: 16px;
     font-size: 22px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    user-select: none;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: rgb(154, 66, 237);
+}
+
+.spacer {
+    height: 5px;
+    width: 5px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 8px;
 }
